@@ -10,7 +10,7 @@ import './style.css'
 export default function NavBar() {
   return (
     <div align="left" className='nav'>     
-        <h2><Link to='/'>Stocks Manager</Link></h2>
+        <h2 ><Link to='/' className='Home'>Stocks Manager</Link></h2>
         <ul>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/portfolio'>Portfolio</Link></li>
@@ -18,15 +18,14 @@ export default function NavBar() {
             <li><Link to='/profile'>Profile</Link></li>
             <li><Link to='/help'>Help</Link></li>
         </ul>
-        <hr/>
+        <hr style={{color:"red"}}/>
         <Routes>
             <Route path='/' Component={Stocks}/>
             <Route path='/portfolio' Component={Portfolio}/>
             <Route path='/transactions' Component={Transactions}/>
             <Route path='/profile' Component={Profile}/>
             <Route path='/help' Component={Help}/>
-        </Routes>
-        
+        </Routes>  
     </div>
   )
 }

@@ -1,5 +1,5 @@
 /* Resetting default margin and padding for the list items */
-ul, ol {
+.ul {
     margin: 0;
     padding: 0;
     
@@ -39,7 +39,7 @@ ul, ol {
   }
   
   /* Adding spacing between the header and the navigation bar */
-  h2 {
+  .h2 {
     margin-bottom: 20px;
     color:white;
   }
@@ -71,7 +71,7 @@ ul, ol {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  label
+  .label
   {
     padding: 12px 12px 12px 0;
     display: inline-block;
