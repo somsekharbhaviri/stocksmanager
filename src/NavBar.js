@@ -22,7 +22,7 @@ export default function NavBar() {
             <li><Link to='/profile'>Profile</Link></li>
             <li><Link to='/help'>Help</Link></li>
         </ul>
-        <hr style={{color:"red"}}/>
+       <hr className='line'></hr>
         <Routes>
             <Route path='/' Component={Stocks}/>
             <Route path='/portfolio' Component={Portfolio}/>
