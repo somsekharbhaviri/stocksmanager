@@ -1,13 +1,19 @@
 
 import React, { useState, useEffect } from 'react' 
 import Stocksdata from './data/stocks.json' 
+import TrendingStocks from './data/trendingstocks.json'
  
 export default function Stocks() { 
     const [data,setData] = useState([]) // empty array 
- 
-    useEffect(() => { 
-        setData(Stocksdata) 
-    }, []); 
+    const [TrendingStocksdata,SetTrendingStocksdata]=useState([])
+    useEffect(() => {
+        setData(Stocksdata)
+        SetTrendingStocksdata(TrendingStocks)
+    }, []);
+
+    
+    
+    
   return ( 
     <div> 
         <div class="main-div"> 
@@ -18,36 +24,36 @@ export default function Stocks() {
                  
            {data.map((stock, index) => ( 
                          
-                          <div key={index} className="insideboxes"> 
-                            <div className='pintopstocks'> 
-                              {stock.sid} &nbsp;&nbsp; {stock.sname} 
-                            </div> 
-                            <div className="button-container"> 
-                              <button className="BuySmallButton">Buy</button> 
-                              <button className="SellSmallButton">Sell</button> 
-                            </div> 
-                          </div> 
-                        ))} 
-                      </div> 
+                <div key={index} className="insideboxes"> 
+                <div className='pintopstocks'> 
+                    &nbsp;&nbsp; {stock.sname} 
+                </div> 
+                <div className="button-container"> 
+                    <button className="BuySmallButton">Buy</button> 
+                    <button className="SellSmallButton">Sell</button> 
+                </div> 
+                </div> 
+            ))} 
+            </div> 
                        
  
            <br/> 
  
            <h2 >Stocks In Loss</h2> 
-           <div align="center" class="outsideboxes"> 
+           <div align="center" class="outsideboxes" > 
            { 
                 data.map((Stocksdata, index)  => ( 
                 <div key={index} class="insideboxes">  
                   
-                 <div className='pintopstocks'>{Stocksdata.sid} 
+                 <div className='pintopstocks'>
                  &nbsp;&nbsp; 
                  {Stocksdata.sname} 
                  </div> 
                   
                  <div className="button-container"> 
-                              <button className="BuySmallButton">Buy</button> 
-                              <button className="SellSmallButton">Sell</button> 
-                            </div>  
+                        <button className="BuySmallButton">Buy</button> 
+                        <button className="SellSmallButton">Sell</button> 
+                    </div>  
                  </div> 
             )) 
         } 
@@ -62,15 +68,15 @@ export default function Stocks() {
                 data.map((Stocksdata, index)  => ( 
                 <div key={index} class="insideboxes">  
                   
-                 <div className='pintopstocks'>{Stocksdata.sid} 
+                 <div className='pintopstocks'>
                  &nbsp;&nbsp; 
                  {Stocksdata.sname} 
                  </div> 
                   
                  <div className="button-container"> 
-                              <button className="BuySmallButton">Buy</button> 
-                              <button className="SellSmallButton">Sell</button> 
-                            </div>  
+                        <button className="BuySmallButton">Buy</button> 
+                        <button className="SellSmallButton">Sell</button> 
+                    </div>  
                  </div> 
             )) 
         } 
@@ -79,21 +85,25 @@ export default function Stocks() {
        <div class="sub-main-div"> 
        <div class="verticalbox"> 
            <h2 >Trending</h2> 
-           <div align="center" class="outsideboxes">  
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
-               <div  class="insideboxes">      <button
-
-
-class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div> 
+           <div align="center" class="outsideboxes" >  
+           { 
+                TrendingStocksdata.map((trendingstock, index)  => ( 
+                <div key={index} class="insideboxes" >  
+                  
+                 <div className='pintopstocks'>
+                 &nbsp;&nbsp; {trendingstock.symbol} 
+                 &nbsp;&nbsp; {trendingstock.sname} 
+                 &nbsp;&nbsp; {trendingstock.current_price}
+                 
+                 </div> 
+                  
+                 <div className="button-container"> 
+                        <button className="BuySmallButton">Buy</button> 
+                        <button className="SellSmallButton">Sell</button> 
+                    </div>  
+                 </div> 
+            )) 
+        }
            </div> 
        </div> 
        </div> 

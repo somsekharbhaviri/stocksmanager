@@ -1,35 +1,34 @@
-
 /* Resetting default margin and padding for the list items */ 
-ul { 
-    margin: 0; 
-    padding: 0; 
+ul {
+    margin: 0;
+    padding: 0;
      
   } 
    
   /* Styling the navigation bar */ 
   .nav { 
-    background-color: #9384c200; /* Change this to your desired background color */ 
-    border-bottom: 0px; 
-    padding-bottom: 0px; 
-  } 
+    background-color: #9384c200; /* Change this to your desired background color */
+    border-bottom: 0px;
+    padding-bottom: 0px;
+  }
    
   .nav { 
-    display: inline-block; 
-    padding: 15px 20px; 
-    text-decoration: none; 
-    color: white; /* Change this to your desired text color */ 
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white; /* Change this to your desired text color */
   } 
    
-.logout{ 
-    text-align: end; 
+.logout{
+    text-align: end;
 } 
    
   /* Centering the navigation links */ 
   
    
   .nav li { 
-    display: inline; 
-    margin-right: 10px; /* Adjust the spacing between links */ 
+    display: inline;
+    margin-right: 10px; /* Adjust the spacing between links */
   } 
    
   /* Making the navigation bar fixed at the top */ 
@@ -180,12 +179,12 @@ input{
 } 
  
 .verticalbox .outsideboxes { 
-  width: 300px; 
+  width: 400px; 
   height: auto; 
 } 
  
 .verticalbox .insideboxes { 
-  width: 250px; 
+  width: 350px; 
   height: 40px; 
   margin-bottom: 20px; 
 } 
