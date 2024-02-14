@@ -10,7 +10,11 @@ import './style.css'
 export default function NavBar() {
   return (
     <div align="left" className='nav'>     
-        <h2 ><Link to='/' className='Home'>Stocks Manager</Link></h2>
+        <ul>
+            <li className='Home'><Link to='/' class="Home" >Stock Manager</Link></li>    
+                
+        </ul>
+        
         <ul>
             <li><Link to='/'>Home</Link></li>
             <li><Link to='/portfolio'>Portfolio</Link></li>

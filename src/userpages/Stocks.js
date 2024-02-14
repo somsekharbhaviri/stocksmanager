@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import Stocksdata from './data/stocks.json'
 
 export default function Stocks() {
+    const [data,setData] = useState([]) // empty array
+
+    useEffect(() => {
+        setData(Stocksdata)
+    }, []);
   return (
     <div>
         <div class="main-div">
@@ -8,19 +14,39 @@ export default function Stocks() {
        <div>
            <h2 >Top Stocks</h2>
            <div align="center" class="outsideboxes">
-               <div  class="insideboxes" >        <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
-               <div  class="insideboxes">        <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
-               <div  class="insideboxes">        <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+                
+               {
+                data.map((Stocksdata, index)  => (
+                <div key={index} class="insideboxes"> 
+                 
+                 <div className='pintopstocks'>{Stocksdata.sid}
+                 &nbsp;&nbsp;
+                 {Stocksdata.sname}
+                 </div>
+                 
+                 <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+            ))
+        }
            </div>
 
            <br/>
 
-           <h2 s>Stocks In Loss</h2>
+           <h2 >Stocks In Loss</h2>
            <div align="center" class="outsideboxes">
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>     </div>
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>     </div>
-               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>     </div>
+           {
+                data.map((Stocksdata, index)  => (
+                <div key={index} class="insideboxes"> 
+                 
+                 <div className='pintopstocks'>{Stocksdata.sid}
+                 &nbsp;&nbsp;
+                 {Stocksdata.sname}
+                 </div>
+                 
+                 <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+            ))
+        }
            </div>
+
 
            <br/>
 
@@ -35,13 +61,15 @@ export default function Stocks() {
        <div class="verticalbox">
            <h2 >Trending</h2>
            <div align="center" class="outsideboxes"> 
-               <div  class="insideboxes" >     <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
                <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
                <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
-               <div  class="insideboxes" >     <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
                <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
                <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
-               <div  class="insideboxes" >     <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
+               <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
                <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
                <div  class="insideboxes">      <button class="BuySmallButton">B</button> <button class="SellSmallButton">S</button>   </div>
            </div>

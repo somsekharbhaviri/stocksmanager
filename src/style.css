@@ -1,5 +1,5 @@
 /* Resetting default margin and padding for the list items */
-.ul {
+ul {
     margin: 0;
     padding: 0;
     
@@ -39,7 +39,7 @@
   }
   
   /* Adding spacing between the header and the navigation bar */
-  .h2 {
+  h2 {
     margin-bottom: 20px;
     color:white;
   }
@@ -71,7 +71,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .label
+  label
   {
     padding: 12px 12px 12px 0;
     display: inline-block;
@@ -155,14 +155,16 @@ input{
 }
 
 .insideboxes{
+  
   width: 600px; 
-  height: 35px; 
+  height: 40px; 
   background: rgba(9.63, 145.40, 154.06, 0.17);
   border-radius: 7px; 
   border: 1px #02A4FF solid; 
   margin-top: 10px;
   margin-bottom:10px;
   text-align: right;
+  
 }
 
 .sub-main-div {
@@ -234,13 +236,12 @@ margin:20px;
   background-color: 358FC1;
     border: none;
     color: white;
-    padding: 5px 8px;
+    padding: 4px 8px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    margin-top: 8px;
     margin-right:9px;
     transition: padding-left 0.3s,padding-right 0.3s, background-color 0.2s;
   background-color: rgb(81, 201, 81);
@@ -248,14 +249,13 @@ margin:20px;
 
 .BuySmallButton:active{
   background-color: rgb(53, 105, 53);
-
 }
 
 .SellSmallButton{
   background-color: 358FC1;
     border: none;
     color: white;
-    padding: 5px 8px;
+    padding: 4px 8px;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
@@ -270,4 +270,13 @@ margin:20px;
 .SellSmallButton:active{
   background-color: rgb(151, 46, 46);
 
+}
+Link{
+  font-size: xx-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.pintopstocks{
+  display:flex;
+  text-align:justify;
+  
 }
