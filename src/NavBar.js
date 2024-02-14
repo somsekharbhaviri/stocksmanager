@@ -9,7 +9,7 @@ import './style.css'
 
 export default function NavBar() {
   return (
-    <div align="left" className='nav'>     
+    <div align="left" className='navbar'>     
         <ul>
             <li className='Home'><Link to='/' class="Home" >Stock Manager</Link></li>    
                 
@@ -22,7 +22,9 @@ export default function NavBar() {
             <li><Link to='/profile'>Profile</Link></li>
             <li><Link to='/help'>Help</Link></li>
         </ul>
-       <hr className='line'></hr>
+        <div className='hr'>
+          <hr/>
+       </div>
         <Routes>
             <Route path='/' Component={Stocks}/>
             <Route path='/portfolio' Component={Portfolio}/>

@@ -91,6 +91,7 @@ export default function Stocks() {
                 <div key={index} class="insideboxes" >  
                   
                  <div className='pintopstocks'>
+                 
                  &nbsp;&nbsp; {trendingstock.symbol} 
                  &nbsp;&nbsp; {trendingstock.sname} 
                  &nbsp;&nbsp; {trendingstock.current_price}

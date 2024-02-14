@@ -1,45 +1,49 @@
-/* Resetting default margin and padding for the list items */ 
-ul {
-    margin: 0;
-    padding: 0;
-     
-  } 
+
+ul{ 
+  margin: 0; 
+  padding: 0; 
+  list-style: none; 
+} 
+ 
+ 
+ 
+.navbar a { 
+  display: inline-block; 
+  padding: 15px 20px; 
+  text-decoration: none; 
+  color: white; 
+} 
+ 
+.navbar a:hover { 
+  background-color:transparent;  
+} 
+ 
+ 
+.navbar ul { 
+  text-align: center; 
+} 
+ 
+.navbar li { 
+  display: inline; 
+  margin-right: 20px;  
+} 
+ 
+ 
+.navbar { 
    
-  /* Styling the navigation bar */ 
-  .nav { 
-    background-color: #9384c200; /* Change this to your desired background color */
-    border-bottom: 0px;
-    padding-bottom: 0px;
-  }
-   
-  .nav { 
-    display: inline-block;
-    padding: 15px 20px;
-    text-decoration: none;
-    color: white; /* Change this to your desired text color */
-  } 
-   
-.logout{
-    text-align: end;
+  top: 0; 
+  width: 100%; 
 } 
    
-  /* Centering the navigation links */ 
-  
+.logout{ 
+    text-align: end; 
+} 
    
-  .nav li { 
-    display: inline;
-    margin-right: 10px; /* Adjust the spacing between links */
-  } 
-   
-  /* Making the navigation bar fixed at the top */ 
-  .nav { 
-     
-    top: 0; 
-    width: 100%; 
-  } 
+ 
    
   /* Adding spacing between the header and the navigation bar */ 
   h2 { 
+    margin-left: 35px;
     margin-bottom: 20px; 
     color:white; 
   } 
@@ -105,8 +109,11 @@ form{
     color: rgb(41, 207, 207); 
 } 
  
-hr{ 
-    color:rgb(76, 99, 148); 
+.hr hr { 
+  border: none; 
+  border-top: 2px solid #0085FF; /* Set the color to #0085FF */ 
+  width: 100%; 
+  margin: 10px 0; 
 } 
  
 a{ 
@@ -175,16 +182,16 @@ input{
 } 
  
 .verticalbox { 
-  width: auto; 
+  width:auto; 
 } 
  
 .verticalbox .outsideboxes { 
-  width: 400px; 
+  width: 560px; 
   height: auto; 
 } 
  
 .verticalbox .insideboxes { 
-  width: 350px; 
+  width: 500px; 
   height: 40px; 
   margin-bottom: 20px; 
 } 
@@ -209,10 +216,7 @@ margin:20px;
   margin-left: 30px; 
   height: auto; 
 } 
-.button
-
-
-{ 
+.button { 
   transition: background-color 0.3s, color 0.3s; 
 } 
  
@@ -225,7 +229,8 @@ margin:20px;
   padding-bottom:12px; 
    
 } 
-.button-container { 
+.button-container
+{ 
   display: flex; 
   justify-content:right; 
   margin-top: -33px; 
@@ -299,6 +304,7 @@ Link{
   justify-content: left; 
   text-align: left; 
   margin-top: 10px; 
+  color: white;
 } 
  
 .data-container { 
