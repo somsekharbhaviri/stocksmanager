@@ -9,7 +9,7 @@ export default function Stocks() {
     useEffect(() => {
         setData(Stocksdata)
         SetTrendingStocksdata(TrendingStocks)
-        document.title="Stocks"
+        
     }, []);
 
     
@@ -18,6 +18,9 @@ export default function Stocks() {
   return ( 
     
     <div> 
+    {
+        document.title="Stocks"
+    }
         <div class="main-div"> 
         
        <div> 

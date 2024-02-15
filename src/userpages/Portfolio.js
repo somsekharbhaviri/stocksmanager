@@ -14,7 +14,7 @@ export default function Portfolio() {
   return (
     <div>
         <div> 
-       <div class="verticalbox"> 
+       <div class="verticalboxportfolio"> 
            <h2 >Trending</h2> 
            <div align="center" class="outsideboxes" >  
            { 
@@ -22,14 +22,15 @@ export default function Portfolio() {
                 <div key={index} class="insideboxes" >  
                   
                  <div className='pintopstocks'>
-                 
-                 &nbsp;&nbsp; {Mystock.symbol} 
-                 &nbsp;&nbsp; {Mystock.sname} 
-                 &nbsp;&nbsp; {Mystock.current_price}
-                 
+                 <i className='font-insideboxes'>&nbsp;&nbsp; {Mystock.symbol} </i>
+                 <i className='font-insideboxes' >&nbsp;&nbsp; {Mystock.sname} </i>
+                 <i className='font-insideboxes'>&nbsp;&nbsp; {Mystock.current_price}</i>
+                 <i className='font-insideboxes'>&nbsp;&nbsp; {Mystock.change_percent}</i>
+                 <i className='font-insideboxes'>&nbsp;&nbsp; {Mystock.sector}</i>
+
                  </div> 
                   
-                 <div className="button-container"> 
+                 <div className="button-container-portfolio"> 
                         <button className="BuySmallButton">Buy</button> 
                         <button className="SellSmallButton">Sell</button> 
                     </div>  
