@@ -149,6 +149,9 @@ input{
 .main-div { 
   display: flex; 
   flex-direction: row; 
+  justify-content: space-between; 
+  width:100%;
+
 } 
  
 .outsideboxes{ 
@@ -337,3 +340,23 @@ Link{
 
 }
 
+
+.portfolio-container {
+  display: flex;
+}
+
+.main-div-portfolio,
+.sub-main-div-portfolio {
+  flex: 1;
+  margin-right: 550px; 
+  text-align:left;
+}
+
+.outsideboxinvestments{
+  width: 400px;  
+  background: rgba(9.63, 145.40, 154.06, 0);  
+  border-radius: 7px;  
+  border: 1px #02A4FF solid;  
+  padding:10px; 
+  height:200px; 
+}

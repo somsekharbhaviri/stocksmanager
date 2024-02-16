@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react' 
 import Stocksdata from './data/stocks.json' 
 import TrendingStocks from './data/trendingstocks.json'
+
  
 export default function Stocks() { 
     const [data,setData] = useState([]) // empty array 
@@ -9,7 +10,6 @@ export default function Stocks() {
     useEffect(() => {
         setData(Stocksdata)
         SetTrendingStocksdata(TrendingStocks)
-        
     }, []);
 
     
