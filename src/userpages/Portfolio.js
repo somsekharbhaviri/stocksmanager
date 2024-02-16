@@ -18,7 +18,7 @@ export default function Portfolio() {
             {MyStocks.map((Mystock, index) => (
               <div key={index} className="insideboxes">
                 <div className="pintopstocks">
-                  <i className="font-insideboxes">&nbsp;&nbsp; {Mystock.symbol} </i>
+                  <i >&nbsp;&nbsp; {Mystock.symbol} </i>
                   <i className="font-insideboxes">&nbsp;&nbsp; {Mystock.sname} </i>
                   <i className="font-insideboxes">&nbsp;&nbsp; {Mystock.current_price}</i>
                   <i className="font-insideboxes">&nbsp;&nbsp; {Mystock.change_percent}</i>
