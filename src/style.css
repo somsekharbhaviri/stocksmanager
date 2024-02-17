@@ -219,12 +219,27 @@ margin-right: 50px;
   margin-left: 30px; 
   height: auto; 
 } 
-.button { 
-  transition: background-color 0.3s, color 0.3s; 
-} 
+
+  .button {
+    
+    background-color:rgb(5, 134, 189);
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50px;
+    margin-top: 20px;
+    margin-left:20px;
+    transition: padding-left 0.3s,padding-right 0.3s, background-color 0.3s;
+  }
+
  
 .button:hover{ 
-  background-color: rgb(41, 207, 207); 
+  background-color: rgb(9, 194, 194); 
   color: white; 
   padding-left:40px; 
   padding-right:40px; 
@@ -359,4 +374,5 @@ Link{
   border: 1px #02A4FF solid;  
   padding:10px; 
   height:200px; 
+  margin-bottom: 150px;
 }

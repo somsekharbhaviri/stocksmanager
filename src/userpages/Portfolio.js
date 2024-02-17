@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import MyStocksdata from './data/trendingstocks.json';
+import Chart from "chart.js/auto"; // Importing the Chart.js library
+import { Line } from "react-chartjs-2";
 
 
 export default function Portfolio() {
@@ -44,7 +46,18 @@ export default function Portfolio() {
             }
           </div>
         </div>
+        <div className="verticalboxportfolio">
+          <h2>Graph</h2>
+          <div className="outsideboxinvestments">
+            {
+
+
+
+            }
+          </div>
+        </div>
       </div>
+      
     </div>
   );
 }
