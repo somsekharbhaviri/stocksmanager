@@ -41,9 +41,9 @@ export default function RegistrationForm() {
  
     return ( 
         <div> 
-            <h2>Registration Form</h2> 
-            <div className="big-box"> 
-                <form onSubmit={handleSubmit}> 
+            <h2 align="center" style={{marginLeft:"-20px"}}>Registration Form</h2>
+            <div className="big-box">
+                <form onSubmit={handleSubmit} style={{height:"auto"}}> 
                     <div className="inner-box"> 
                         <div className="form-group"> 
                             <label htmlFor="name" className="label-field">Name</label> 

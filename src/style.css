@@ -365,7 +365,7 @@ Link{
 .main-div-portfolio,
 .sub-main-div-portfolio {
   flex: 1;
-  margin-right: 550px; 
+  margin-right: 500px; 
   text-align:left;
 }
 
@@ -376,5 +376,15 @@ Link{
   border: 1px #02A4FF solid;  
   padding:10px; 
   height:200px; 
+  margin-bottom: 150px;
+}
+
+.outsideboxgraph{
+  width: 450px;  
+  background: rgba(22, 114, 120, 0.324);  
+  border-radius: 7px;  
+  border: 1px #02A4FF solid;  
+  padding:10px; 
+  height:250px; 
   margin-bottom: 150px;
 }

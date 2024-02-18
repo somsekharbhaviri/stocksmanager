@@ -6,11 +6,11 @@ import RegistrationForm from './UserRegistration';
 
 export default function Login() {
     const navigate=useNavigate();
-
     const handleLogin = () => {
         navigate('/registration');
         
     }
+    
 return (
     <div>
              <h2 align="center" style={{marginTop:240}}>Enter Your Credentials</h2>
