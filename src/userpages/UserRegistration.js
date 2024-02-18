@@ -1,7 +1,7 @@
 
 import React, { useState } from 'react'; 
 import{useNavigate } from 'react-router-dom';
-import Login from './Login';
+
  
 export default function RegistrationForm() { 
     const [formData, setFormData] = useState({ 
@@ -34,7 +34,7 @@ export default function RegistrationForm() {
             return; 
         } 
         alert('Registration successful!\nName: ' + formData.name + '\nAge: ' + formData.age + '\nContact: ' + formData.contact); 
-
+        
         // Redirect to login page
         navigate('/login');
     }; 

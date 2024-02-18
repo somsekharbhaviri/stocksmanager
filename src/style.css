@@ -99,6 +99,8 @@ form{
     border-color:rgba(24, 122, 214, 0.733); 
     border-style:solid; 
     text-align: center; 
+    height: 170px;
+    
 } 
 .Home{ 
     font-size: xx-large; 
