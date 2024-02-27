@@ -82,7 +82,7 @@ export default function Portfolio() {
           </div>
         </div>
       </div>
-      <div className="sub-main-div-portfolio">
+      <div className="sub-main-div-portfolio" style={{marginLeft:"40px"}}>
         <div className="verticalboxportfolio">
           <h2 style={{ marginLeft: "0px" }}>My Graph</h2>
           <div className="outsideboxgraph">

@@ -354,6 +354,7 @@ Link{
 .verticalboxportfolio .outsideboxes { 
   width: 700px; 
   height: auto; 
+  margin-left:40px;
 } 
  
 .verticalboxportfolio .insideboxes { 
@@ -415,3 +416,31 @@ footer{
 }
 
 
+td{
+  color:white;
+  text-align: left;
+  border: solid rgba(0, 162, 255, 0.123) thin;
+}
+
+button{
+  background-color: 358FC1; 
+    border: none; 
+    color: white; 
+    padding: 10px 32px; 
+    text-align: center; 
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border-radius: 50px; 
+    margin-top: 20px; 
+    transition: padding-left 0.3s,padding-right 0.3s, background-color 0.3s; 
+}
+button:hover{
+  background-color: rgb(9, 135, 194); 
+  color: white; 
+  padding-left:40px; 
+  padding-right:40px; 
+  padding-top:12px; 
+  padding-bottom:12px; 
+}
