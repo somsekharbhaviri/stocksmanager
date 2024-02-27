@@ -11,7 +11,8 @@ import './style.css'
 
 export default function NavBar() {
   return (
-    <div align="left" className='navbar'>     
+    <div align="left" className='navbar'> 
+    <div className='ul'>
         <ul>
             <li className='Home'><Link to='/' class="Home" >Stock Manager</Link></li>    
                 
@@ -28,6 +29,9 @@ export default function NavBar() {
         <div className='hr'>
           <hr/>
        </div>
+       </div>
+
+       <div>
         <Routes>
             <Route path='/' Component={Login}/>
             <Route path='/home' Component={Stocks}/>
@@ -37,8 +41,14 @@ export default function NavBar() {
             <Route path='/help' Component={Help}/>
             <Route path='/login' Component={Login}/>
             <Route path='/registration' Component={UserRegistration}/>
-
         </Routes>  
+          <br/>
+          <br/>
+          
+        <footer>
+          <p style={{color:"white"}}>&copy; 2024 Stocksmanager. All rights reserved.</p>
+        </footer>
+        </div>
     </div>
   )
 }

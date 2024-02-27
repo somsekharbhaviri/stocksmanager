@@ -20,12 +20,15 @@ ul{
  
  
 .navbar ul { 
-  text-align: center; 
+  text-align:center;
+  
+  
 } 
  
 .navbar li { 
   display: inline; 
   margin-right: 20px;  
+  positon: fixed;
 } 
  
  
@@ -71,7 +74,7 @@ ul{
     display: inline-block; 
     border-radius: 7px; 
     box-sizing: border-box; 
-    color:white; 
+    color:rgb(255, 255, 255); 
     font-family: Verdana, Geneva, Tahoma, sans-serif; 
   } 
    
@@ -84,10 +87,19 @@ ul{
   } 
  
   body{ 
-    background-image: url("images/Loginbg.jpg"); 
+    background-image: url("images/Loginbg.jpg");    ;
     background-repeat: no-repeat; 
     background-size: cover; 
+    background-attachment: fixed;
+    
+    
+    
 } 
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for webkit browsers */
+
+}
+
  
 form{ 
     background-color: rgba(0, 131, 253, 0); 
@@ -114,7 +126,7 @@ form{
 .hr hr { 
   border: none; 
   border-top: 2px solid #0085FF; /* Set the color to #0085FF */ 
-  width: 100%; 
+  width: 101%; 
   margin: 10px 0; 
 } 
  
@@ -370,13 +382,14 @@ Link{
 }
 
 .outsideboxinvestments{
-  width: 400px;  
+  width: 450px;  
   background: rgba(9.63, 145.40, 154.06, 0);  
   border-radius: 7px;  
   border: 1px #02A4FF solid;  
   padding:10px; 
-  height:200px; 
+  height:250px; 
   margin-bottom: 150px;
+  display:flex;
 }
 
 .outsideboxgraph{
@@ -388,3 +401,17 @@ Link{
   height:250px; 
   margin-bottom: 150px;
 }
+
+footer{
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #146b9e4d;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border:solid 2px  #00a2ff4d;
+}
+
+
