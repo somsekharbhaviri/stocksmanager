@@ -58,16 +58,16 @@ export default function Profile() {
         <div class="verticalbox" style={{marginTop:'-1050px',marginRight:'40px'}}>
           <h2>Settings</h2>
           <div align="center" class="outsideboxes" style={{ width: "400px" }}>
-            <button className="insideboxes" style={{ width: "360px",textAlign:'center' }} ><i>Change Password</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Change Account Pin</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Reports</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Nominee Details</i></button>
-            <button className="insideboxes" style={{ width: "360px",textAlign:'center' }}><i>Active Devices</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Trading Preferences</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Personal Details</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Change Profile Photo</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Edit Profile</i></button>
-            <button className="insideboxes" style={{ width: "360px" ,textAlign:'center'}}><i>Upgrade to premium</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px",textAlign:'center' }} ><i>Change Password</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Change Account Pin</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Reports</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Nominee Details</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px",textAlign:'center' }}><i>Active Devices</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Trading Preferences</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Personal Details</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Change Profile Photo</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Edit Profile</i></button>
+            <button className="insideboxesbutton" style={{ width: "360px" ,textAlign:'center'}}><i>Upgrade to premium</i></button>
           </div>
         </div>
       </div>

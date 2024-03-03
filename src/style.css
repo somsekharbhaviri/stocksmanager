@@ -422,10 +422,10 @@ td{
   border: solid rgba(0, 162, 255, 0.123) thin;
 }
 
-button{
-  background-color: 358FC1; 
+.insideboxesbutton{
+  background-color: rgba(0, 102, 128, 0.466); 
     border: none; 
-    color: white; 
+    color: rgb(255, 255, 255); 
     padding: 10px 32px; 
     text-align: center; 
     text-decoration: none; 
@@ -434,9 +434,17 @@ button{
     cursor: pointer; 
     border-radius: 50px; 
     margin-top: 20px; 
+    width: 600px;  
+  height: 50px;  
+  background: rgba(9.63, 145.40, 154.06, 0.17); 
+  border-radius: 7px;  
+  border: 1px #02A4FF solid;  
+  margin-top: 10px; 
+  margin-bottom:10px; 
+  text-align: right; 
     transition: padding-left 0.3s,padding-right 0.3s, background-color 0.3s; 
 }
-button:hover{
+.insideboxesbutton:hover{
   background-color: rgb(9, 135, 194); 
   color: white; 
   padding-left:40px; 
