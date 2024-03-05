@@ -2,17 +2,31 @@
 import React, { useState, useEffect } from 'react' 
 import Stocksdata from './data/stocks.json' 
 import TrendingStocks from './data/trendingstocks.json'
+import axios from 'axios'
+
+
 
  
 export default function Stocks() { 
-    const [data,setData] = useState([]) // empty array 
+
+    const [data,setData] = useState({top_gainers:[]}) // empty array 
     const [TrendingStocksdata,SetTrendingStocksdata]=useState([])
     useEffect(() => {
         setData(Stocksdata)
         SetTrendingStocksdata(TrendingStocks)
+        fetchdata();
     }, []);
 
-    
+    const fetchdata=async ()=>{
+        await axios.get("https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey=demo")
+        .then((response) => {
+            console.log(response.data)
+            setData(response)
+            
+        }).catch((err) => {
+            console.log(err.message)
+        });
+    }
     
     
   return ( 
@@ -31,7 +45,7 @@ export default function Stocks() {
                          
                 <div key={index} className="insideboxes"> 
                 <div className='pintopstocks'> 
-                    &nbsp;&nbsp; {stock.sname} 
+                    &nbsp;&nbsp; {stock.ticker} 
                 </div> 
                 <div className="button-container"> 
                     <button className="BuySmallButton">Buy</button> 
