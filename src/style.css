@@ -1,12 +1,9 @@
-
 ul{ 
   margin: 0; 
   padding: 0; 
   list-style: none; 
 } 
- 
- 
- 
+
 .navbar a { 
   display: inline-block; 
   padding: 15px 20px; 
@@ -17,12 +14,9 @@ ul{
 .navbar a:hover { 
   background-color:transparent;  
 } 
- 
- 
+  
 .navbar ul { 
-  text-align:center;
-  
-  
+  text-align:center;  
 } 
  
 .navbar li { 
@@ -30,7 +24,6 @@ ul{
   margin-right: 20px;  
   positon: fixed;
 } 
- 
  
 .navbar { 
    
@@ -40,10 +33,7 @@ ul{
    
 .logout{ 
     text-align: end; 
-} 
-   
- 
-   
+}  
   /* Adding spacing between the header and the navigation bar */ 
   h2 { 
     margin-left: 35px;
@@ -138,8 +128,6 @@ a{
 a:hover{ 
   color:aquamarine 
 } 
- 
- 
 .card  
 { 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
@@ -151,8 +139,7 @@ a:hover{
     padding: 10px; /* Add some padding to the card content */ 
     color: rgb(255, 255, 255); 
     border-radius: 13px; 
-    background: rgba(9.63, 145.40, 154.06, 0.17); 
-     
+    background: rgba(9.63, 145.40, 154.06, 0.17);    
 } 
  
 input{ 
@@ -165,7 +152,6 @@ input{
   flex-direction: row; 
   justify-content: space-between; 
   width:100%;
-
 } 
  
 .outsideboxes{ 
@@ -179,7 +165,6 @@ input{
 } 
  
 .insideboxes{ 
-   
   width: 600px;  
   height: 40px;  
   background: rgba(9.63, 145.40, 154.06, 0.17); 
@@ -188,7 +173,6 @@ input{
   margin-top: 10px; 
   margin-bottom:10px; 
   text-align: right; 
-   
 } 
  
 .sub-main-div { 
@@ -234,8 +218,7 @@ margin-right: 50px;
   height: auto; 
 } 
 
-  .button {
-    
+  .button {  
     background-color:rgb(5, 134, 189);
     border: none;
     color: white;
@@ -261,6 +244,7 @@ margin-right: 50px;
   padding-bottom:12px; 
    
 } 
+
 .button-container
 { 
   display: flex; 
@@ -278,8 +262,7 @@ margin-right: 50px;
   border: 1px #02A4FF solid;  
   padding:10px;  
   margin-left: 30px; 
-  background: rgba(9.63, 145.40, 154.06, 0.17); 
-   
+  background: rgba(9.63, 145.40, 154.06, 0.17);   
 } 
  
 .BuySmallButton{ 
@@ -323,8 +306,7 @@ margin-right: 50px;
  
 .SellSmallButton:active{ 
   background-color: rgb(151, 46, 46); 
-  transform: scale(0.95);  
- 
+  transform: scale(0.95);
 } 
 Link{ 
   font-size: xx-large; 
@@ -367,7 +349,6 @@ Link{
   justify-content:right; 
   margin-top: -29px; 
   align-items: center; 
-
 }
 
 
@@ -442,10 +423,10 @@ td{
   margin-top: 10px; 
   margin-bottom:10px; 
   text-align: right; 
-    transition: padding-left 0.3s,padding-right 0.3s, background-color 0.3s; 
+  transition: padding-left 0.3s,padding-right 0.3s, background-color 0.3s; 
 }
 .insideboxesbutton:hover{
-  background-color: rgb(9, 135, 194); 
+  background-color: rgb(9, 135, 194);
   color: white; 
   padding-left:40px; 
   padding-right:40px; 
