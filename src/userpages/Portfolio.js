@@ -61,7 +61,7 @@ export default function Portfolio() {
           <div align="center" className="outsideboxes">
             {MyStocks.map((Mystock, index) => (
               <div key={index} className="insideboxes">
-                <div className="pintopstocks">
+                <div className="pintopstocks"style={{marginTop:"15px"}}>
                   <i >&nbsp;&nbsp; {Mystock.symbol} </i>
                   <i className="font-insideboxes">&nbsp;&nbsp; {Mystock.sname} </i>
                   <i className="font-insideboxes">&nbsp;&nbsp; {Mystock.current_price}</i>

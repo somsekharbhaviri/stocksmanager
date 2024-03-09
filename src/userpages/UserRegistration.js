@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'; 
 import{useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
  
 export default function RegistrationForm() { 
@@ -13,8 +14,11 @@ export default function RegistrationForm() {
         annualIncome: '', 
         source: '', 
         bankName: '', 
-        bankAccount: '' 
+        bankAccount: '' ,
+        password:''
     }); 
+    const [message, setMessage] = useState('');
+    const [error, setError] = useState('');
  
     const handleChange = (e) => { 
         const { name, value } = e.target; 
@@ -27,24 +31,44 @@ export default function RegistrationForm() {
     const navigate=useNavigate();
 
  
-    const handleSubmit = (e) => { 
-        e.preventDefault(); 
-        if (formData.name.trim() === '') { 
-            alert('Please enter your name'); 
-            return; 
+    const handleSubmit = async(e) => { 
+        e.preventDefault();
+        try 
+        {
+          const response = await axios.post('http://localhost:2123/insertuser', formData);
+          if (response.status === 200) 
+          {
+            //It will set all fields to ""
+            setFormData({
+                name: '', 
+                age: '', 
+                contact: '', 
+                aadhar: '', 
+                panno: '', 
+                annualIncome: '', 
+                source: '', 
+                bankName: '', 
+                bankAccount: '' ,
+                password:''
+            });
+          }
+          setMessage(response.data);
+          setError(''); //set error to ""
+          navigate('/login')
         } 
-        alert('Registration successful!\nName: ' + formData.name + '\nAge: ' + formData.age + '\nContact: ' + formData.contact); 
-        
-        // Redirect to login page
-        navigate('/login');
+        catch(error) 
+        {
+          setError(error.response.data);
+          setMessage(''); //set message to ""
+        }
     }; 
  
     return ( 
         <div> 
             <h2 align="center" style={{marginLeft:"-20px"}}>Registration Form</h2>
-            <div className="big-box">
+            <div >
                 <form onSubmit={handleSubmit} style={{height:"auto"}}> 
-                    <div className="inner-box"> 
+                    <div className='registrationout' style={{marginLeft:"00px",height:"700px",overflow:"scroll"}}> 
                         <div className="form-group"> 
                             <label htmlFor="name" className="label-field">Name</label> 
                             <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" className="input-field" /> 
@@ -78,17 +102,21 @@ export default function RegistrationForm() {
                             <input type="text" id="bankName" name="bankName" value={formData.bankName} onChange={handleChange} placeholder="Enter your bank name" className="input-field" /> 
                         </div> 
                         <div className="form-group"> 
-                            <label
-
-
-                htmlFor="bankAccount" className="label-field">Bank Account</label> 
+                            <label htmlFor="bankAccount" className="label-field">Bank Account</label> 
                             <input type="text" id="bankAccount" name="bankAccount" value={formData.bankAccount} onChange={handleChange} placeholder="Enter your bank account number" className="input-field" /> 
+                        </div> 
+                        <div className="form-group"> 
+                            <label htmlFor="password" className="label-field">Password</label> 
+                            <input type="password" id="password" name="password" value={formData.password} onChange={handleChange} placeholder="Create Password" className="input-field" /> 
                         </div> 
                     </div> 
                     <div className="button" align="center"> 
                         <input type="submit" value="Register" className="submit-button" onClick={handleSubmit}/> 
                     </div> 
                 </form> 
+                {
+                    message ? <h4 align="center" style={{fontSize:"30px",color:"white"}}>{message}</h4> : <h4 align="center">{error}</h4>
+                }
             </div> 
             <div className="form-group"> 
                 <a href="#" className="help-link">Help</a> 

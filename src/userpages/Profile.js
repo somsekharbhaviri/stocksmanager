@@ -7,7 +7,7 @@ export default function Profile() {
 
       {/* First Profile Box */}
       <div className="profile-box">
-        <div className="outsideboxinvestments" style={{ marginLeft: "30px" }}>
+        <div className="outsideboxinvestments" style={{ marginLeft: "30px" ,marginBottom:"30px"}}>
           <div
             className="insideboxes"
             style={{
@@ -55,7 +55,7 @@ export default function Profile() {
       </div>
 
       <div class="sub-main-div">
-        <div class="verticalbox" style={{marginTop:'-1050px',marginRight:'40px'}}>
+        <div class="verticalbox" style={{marginTop:'-940px',marginRight:'40px'}}>
           <h2>Settings</h2>
           <div align="center" class="outsideboxes" style={{ width: "400px" }}>
             <button className="insideboxesbutton" style={{ width: "360px",textAlign:'center' }} ><i>Change Password</i></button>
