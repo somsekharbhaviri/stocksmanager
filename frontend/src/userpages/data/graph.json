@@ -29,4 +29,8 @@
       "userGain": 40300,
       "userLost": 234
     }
+<<<<<<< HEAD:frontend/src/userpages/data/graph.json
     ]
+=======
+    ]
+>>>>>>> 9392db482f4fbda1088e65af5efea82f11aa412c:src/userpages/data/graph.json

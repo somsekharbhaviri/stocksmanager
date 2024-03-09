@@ -1,0 +1,78 @@
+/* AboutUs.css */
+
+.about-us-container {
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .about-us-heading {
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+   
+  }
+  
+  .team-member-card {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border:1px solid #00aeff ;
+    width:300px;
+    height:550px;
+  }
+  
+  .team-member-card:hover {
+    transform: translateY(-5px) scale(1.05); /* Scale and elevate the card on hover */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+     /* Apply blur effect to non-hovered cards */
+    background-color: #167aa180; /* Change background color on hover */
+  }
+  
+  .team-member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    display: block;
+    object-fit: cover;
+    border: 5px solid #00ccff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .member-details {
+    text-align: center;
+  }
+  
+  .member-name {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: font-size 0.3s ease; /* Add transition for name zoom */
+  }
+  
+  .member-position,
+  .member-description {
+    font-size: 1rem;
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  .additional-details {
+    margin-top: 20px;
+    color: #ffffff;
+  }
+  
+  .additional-details p {
+    margin-bottom: 5px;
+  }
